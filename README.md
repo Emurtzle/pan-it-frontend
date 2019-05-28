@@ -2,7 +2,7 @@
 The beauty industry is constantly churning out new and exciting products which has created a trend towards buying more product than can be feasibly used before it expires. This is an app focused on providing users with a way to track their own makeup collections, remind them about upcoming expirations in their collection and provide inspiration for the products they already own. 
 
 ## Version 1 Hosted on Heroku
-
+https://pan-it.herokuapp.com/
 
 
 ### Test User Login 
