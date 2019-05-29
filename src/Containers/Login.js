@@ -70,7 +70,7 @@ class Login extends Component {
 
   render() {
     const { username, password } = this.state
-
+    window.alert("Would you like to test PanIt out? Try Username: Emily and Password: Emily")
     return (
       <Container fluid>
 
