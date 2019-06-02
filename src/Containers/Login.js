@@ -12,7 +12,8 @@ class Login extends Component {
 
     this.state = {
       username: '',
-      password: ''
+      password: '',
+      hasTyped: false
     }
   }
 
@@ -20,6 +21,7 @@ class Login extends Component {
   handleChange = (ev) => {
     const value = ev.target.type === 'checkbox' ? ev.target.checked : ev.target.value
     this.setState({[ev.target.name]: value})
+    this.setState({hasTyped: true})
   }
 
   // get auth from user profiles on backend
@@ -70,7 +72,9 @@ class Login extends Component {
 
   render() {
     const { username, password } = this.state
-    window.alert("Would you like to test PanIt out? Try Username: Emily and Password: Emily")
+    if (!this.state.hasTyped) {
+      window.alert("Would you like to test PanIt out? Try Username: Emily and Password: Emily")
+    }
     return (
       <Container fluid>
 
